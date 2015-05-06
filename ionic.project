@@ -1,0 +1,12 @@
+{
+  "name": "scratch",
+  "app_id": "761ba284",
+  "gulpStartupTasks": [
+    "sass",
+    "watch"
+  ],
+  "watchPatterns": [
+    "www/**/*",
+    "!www/lib/**/*"
+  ]
+}

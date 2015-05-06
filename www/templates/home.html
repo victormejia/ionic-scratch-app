@@ -1,0 +1,36 @@
+<ion-view view-title="Scratch">
+	<ion-nav-buttons side="secondary">
+		<button class="button button-icon ion-compose" ng-click="showAddMenu()"></button>
+	</ion-nav-buttons>
+  <ion-content class="padding">
+
+  <div class="list card" ng-repeat="note in notes" ng-click="editNote(note.id)">
+    <div class="item">
+      <h2>{{note.title}}</h2>
+      <p>{{note.timestamp | date : 'medium' }}</p> 
+    </div>
+
+    <div class="item item-body">
+      <p>
+        {{note.content}}
+      </p>
+    </div>
+
+   	<div class="item tabs tabs-secondary tabs-icon-left tabs-light">
+   		<a class="tab-item" href="#">
+	      <i class="icon ion-share"></i>
+	      Share
+	    </a>
+	    <a class="tab-item" href="#">
+	      <i class="icon ion-chatbox"></i>
+	      Archive
+	    </a>
+   	</div>
+
+   </div>
+
+
+
+
+  </ion-content>
+</ion-view>
